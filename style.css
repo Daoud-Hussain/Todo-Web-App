@@ -13,13 +13,18 @@
 }
 
 .card{
-    width: 30%;
-    height: 20%;
-    display: flex;
-    align-items: center;
+    width: 40%;
+    height: 30%;
+    /* display: flex;
+    align-items: center; */
     background-color: rgba(245, 222, 179, 0.726);
     margin: 100px auto 10px;
-    padding: 40px 30px 70px;
+    padding: 50px 30px 50px;
+}
+
+.container .card .head{
+    display: flex;
+    align-items: center;
 }
 
 img {
@@ -29,7 +34,58 @@ img {
 }
 
 .search-box{
-    width: 60%;
-    padding: 10px;
-    background: transparent;
+    width: 80%;
+    margin: 12px 0 0 2px;
+    padding: 8px 8px 8px 12px;
+    background: white;
 }
+button{ 
+    border-radius: 25px;
+    width: 70px;
+    height: 38px;
+    background: #e4331f;
+    margin-left: 5px;
+    border: none;  
+}
+button:hover{
+    cursor: pointer;
+}
+
+ul li { 
+    width: 95%;
+    /* padding: 5px 5px 5px; */
+    margin: 12px 0 0 2px;
+    padding: 8px 8px 8px 12px;
+    background: white;
+    border: 1px solid #e4331f;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ul li span{
+    /* height: 4%; */
+    width: 4%;
+    border-radius: 35px;
+    /* background-color: rgb(18, 201, 18); */
+}
+.icon1{
+    padding-left: 30%;
+}
+.icon2{
+    margin-right: -10px;
+
+}
+
+span{
+    color:black;
+}
+
+/* ul li.checked {
+    list-style: none;
+}
+ul li.checked::before{
+    content: '';
+    background-image: url(Images/checked.png);
+    background-size: cover;
+    background-position: center;
+} */
