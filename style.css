@@ -21,7 +21,6 @@
 }
 .light-theme:hover{
   cursor: pointer;
-	/* background: rgba(255, 255, 255, 0.09); */
 }
 
 .container{
@@ -74,52 +73,9 @@ img {
     font-size: 17px;
     border: 1px solid #e4331f;
 }
-/* button{ 
-    border-radius: 25px;
-    width: 70px;
-    height: 38px;
-    background: #e4331f;
-    margin-left: 5px;
-    border: none;  
-}
-button:hover{
-    cursor: pointer;
-} */
-
-/* ul li { 
-    width: 95%;
-    font-size: 16px;
-    /* padding: 5px 5px 5px; 
-    margin: 12px 0 0 2px;
-    padding: 8px 8px 8px 12px;
-    background: white;
-    border: 1px solid #e4331f;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-ul li span{
-     height: 4%;
-    width: 4%;
-    border-radius: 35px;
-    position: absolute;
-    /* background-color: rgb(18, 201, 18);
-}
-.editIcon, .doneIcon{
-    cursor: pointer;
-    left: 80%;
-}
-.deleteIcon{
-    left: 90%;
-    cursor: pointer;
-}*/
 
 li {
     list-style-type: none;
-    /* display: flex; */
-    /* align-items: center; */
-    /* margin-bottom: 8px; */
     position: relative;
     width: 90%;
     margin: 12px 0 0 12px;
@@ -139,8 +95,6 @@ li {
   }
   li i{
     position: absolute;
-    /* color: #e4331f; */
-    /* width: 70%; */
 }
 
 .fa-edit{
