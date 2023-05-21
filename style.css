@@ -5,24 +5,6 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-  
-.dark-theme{
-	position: fixed;
-	bottom: 2.1rem;
-	right: 2.1rem;
-}
-.dark-theme {
-	background: rgba(255, 255, 255, 0.897);
-	color: #302b2b;
-	font-size: 20px;
-	padding: 3px;
-	border-radius: 0.5rem;
-    box-shadow: #e4331f 0px 4px 6px;
-    border: 1px solid #e4331f;
-}
-.dark-theme:hover{
-  cursor: pointer;
-}
 .light-theme{
 	position: fixed;
 	bottom: 2.1rem;
@@ -59,10 +41,10 @@
 
 
 .card{
-    width: 35%;
-    height: 30%;
+    width: 50%;
+    height: 40%;
     margin: 100px auto 10px;
-    padding: 50px 30px 50px 30px;
+    padding: 50px 30px 50px 50px;
 }
 .light-card{
     background-color: rgba(245, 222, 179, 0.726);
@@ -89,9 +71,49 @@ img {
     margin: 12px 0 0 12px;
     padding: 8px 8px 8px 12px;
     background: white;
-    font-size: 16px;
+    font-size: 17px;
     border: 1px solid #e4331f;
 }
+/* button{ 
+    border-radius: 25px;
+    width: 70px;
+    height: 38px;
+    background: #e4331f;
+    margin-left: 5px;
+    border: none;  
+}
+button:hover{
+    cursor: pointer;
+} */
+
+/* ul li { 
+    width: 95%;
+    font-size: 16px;
+    /* padding: 5px 5px 5px; 
+    margin: 12px 0 0 2px;
+    padding: 8px 8px 8px 12px;
+    background: white;
+    border: 1px solid #e4331f;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+ul li span{
+     height: 4%;
+    width: 4%;
+    border-radius: 35px;
+    position: absolute;
+    /* background-color: rgb(18, 201, 18);
+}
+.editIcon, .doneIcon{
+    cursor: pointer;
+    left: 80%;
+}
+.deleteIcon{
+    left: 90%;
+    cursor: pointer;
+}*/
 
 li {
     list-style-type: none;
@@ -103,12 +125,12 @@ li {
     margin: 12px 0 0 12px;
     padding: 8px 8px 8px 12px;
     background: white;
-    font-size: 16px;
+    font-size: 17px;
   }
   input{
     border: none;
     outline: none;
-
+    font-size: 16px;
   }
 
   li{
@@ -117,10 +139,12 @@ li {
   }
   li i{
     position: absolute;
+    /* color: #e4331f; */
+    /* width: 70%; */
 }
 
 .fa-edit{
-    left: 80%;
+    left: 85%;
     top: 27%;
     color:#28a745;;
 }
@@ -128,7 +152,7 @@ li {
     cursor: pointer;
 }
 .fa-trash{
-    left: 90%;
+    left: 93%;
     top: 27%;
     color:#dc3545;
 }
@@ -136,3 +160,60 @@ li {
 .fa-trash:hover{
     cursor: pointer;
 }
+
+
+/* Responsiveness for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .search-box{
+        font-size: 10px;
+    }
+    li{
+        font-size: 10px;
+    }
+    .light-theme {
+        font-size: 10px;
+        padding: 7px;
+        /* border-radius: 0.5rem; */
+        box-shadow: #e4331f 0px 4px 6px;
+        border: 1px solid #e4331f;
+    }
+}
+
+/* Responsivness for small screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .card{
+        width: 90%;
+    }
+    .search-box{
+        font-size: 20px;
+    }
+    li{
+        font-size: 20px;
+    }
+    .light-theme {
+        font-size: 10px;
+        padding: 7px;
+    }
+}
+
+/* Responsivness for small devices */
+@media screen and (min-width: 550px) and (max-width: 767px){
+    .card{
+        width: 90%;
+    }
+}
+
+/* Responsivness for mobile devices */
+@media screen and (max-width: 550px){
+    .card{
+        width: 90%;
+    }
+    h2{
+        font-size: 15px;
+    }
+    li{
+        padding: 5px;
+    }
+}
+  
+  

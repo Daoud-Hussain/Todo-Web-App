@@ -1,5 +1,6 @@
 const newItemInput = document.getElementById('new-item-input');
 const todoList = document.getElementById('todo-list');
+const listContainer = document.getElementById('container')
 
 newItemInput.addEventListener('keydown', (event) => {
   if (event.keyCode === 13 && newItemInput.value !== '') {
@@ -46,12 +47,14 @@ newItemInput.addEventListener('keydown', (event) => {
       listItem.remove();
     });
     listItem.appendChild(deleteIcon);
+    storeData();
 
     // Add the new item to the todo list
     todoList.appendChild(listItem);
 
     // Clear the input field
     newItemInput.value = '';
+
   }
 });
 
@@ -96,4 +99,13 @@ function toggleThemes(){
 
 
 
+function storeData(){
+  localStorage.setItem('data', todoList.innerHTML);
+}
 
+function showData(){
+  todoList.innerHTML = localStorage.getItem('data');
+}
+
+// localStorage.clear()
+showData();
