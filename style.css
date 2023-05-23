@@ -50,7 +50,6 @@
 }
 .dark-card{
     background-color: rgba(39, 39, 38, 0.726);
-    /* color: white; */
 }
 
 .container .card .head{
@@ -95,6 +94,9 @@ li {
   }
   li i{
     position: absolute;
+}
+.list{
+    width: 85%;
 }
 
 .fa-edit{
@@ -165,8 +167,23 @@ li {
     h2{
         font-size: 15px;
     }
+    .search-box{
+        width: 95%;
+        margin-left: 0px;
+    }
     li{
+        width: 95%;
+        margin-left: 0;
         padding: 5px;
+    }
+    .list{
+        width: 78%;
+    }
+    .fa-edit{
+        left: 78%;
+    }
+    .fa-trash{
+        left: 90%;
     }
 }
   
